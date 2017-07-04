@@ -154,7 +154,7 @@ cd ../
 
 # Combine binaries of different architectures results
 BINS=(libcrypto.a libssl.a)
-BINS+=(libevent_core.a libevent_pthreads.a libevent_extra.a libevent_openssl.a) #libevent.a
+BINS+=(libevent_pthreads.a libevent_openssl.a libevent.a) #libevent_extra.a libevent_core.a 
 BINS+=(libcurve25519_donna.a libor-crypto.a libtor.a libor-event.a libor.a libor-trunnel.a libed25519_donna.a libed25519_ref10.a libor-ctime.a libkeccak-tiny.a)
 
 NUMBER_OF_BUILT_ARCHS=${#BUILT_ARCHS[@]}
