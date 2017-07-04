@@ -10,8 +10,8 @@ Pod::Spec.new do |s|
   s.prepare_command = <<-CMD
     export PLATFORM_TARGET="iOS"
     bash ./scripts/build-all.sh
-    export PLATFORM_TARGET="macOS"
-    bash ./scripts/build-all.sh
+#    export PLATFORM_TARGET="macOS"
+#    bash ./scripts/build-all.sh
   CMD
 
   s.dependency 'CocoaAsyncSocket'
@@ -28,9 +28,9 @@ Pod::Spec.new do |s|
   s.osx.vendored_libraries  = "CPAProxyDependencies-macOS/*.a"
   s.osx.resource_bundles = {"CPAProxy" => ["CPAProxyDependencies-macOS/geoip", "CPAProxyDependencies-macOS/geoip6", "CPAProxyDependencies-macOS/torrc"]}
 
-
+#event', 
   s.libraries   = 'crypto', 'curve25519_donna', 'event_core', 'event_extra', 'event_openssl',
-                  'event_pthreads', 'event', 'or-crypto', 'or-event', 'or', 'ssl', 'tor', 'z',
+                  'event_pthreads', ''or-crypto', 'or-event', 'or', 'ssl', 'tor', 'z',
                   'or-trunnel', 'ed25519_donna', 'ed25519_ref10', 'or-ctime'
   s.requires_arc = true
 end
