@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
 
 #event', 
   s.libraries   = 'crypto', 'curve25519_donna', 'event_core', 'event_extra', 'event_openssl',
-                  'event_pthreads', ''or-crypto', 'or-event', 'or', 'ssl', 'tor', 'z',
+                  'event_pthreads', 'or-crypto', 'or-event', 'or', 'ssl', 'tor', 'z',
                   'or-trunnel', 'ed25519_donna', 'ed25519_ref10', 'or-ctime'
   s.requires_arc = true
 end
